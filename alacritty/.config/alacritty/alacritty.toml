@@ -86,7 +86,7 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window]
-padding = { x = 5, y = 1 }
+padding = { x = 5, y = 4 }
 startup_mode = "Maximized"
 dynamic_padding = true
 decorations = "None"
