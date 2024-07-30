@@ -10,30 +10,36 @@
         "hyprland/workspaces",
         "clock",
         "network",
-        "custom/packages",
+        "cpu",
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
+        "memory",
         "pulseaudio",
         "battery",
         "backlight",
     ],
+     "hyprland/window": {
+         "format": "{initialTitle}",
+     },
      "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
          "format": "{icon}",
          "format-icons": {
-             "1": "",
-             "2": "󰈹",
-             "4": "",
-             "3": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
+             //"1": "",
+             //"2": "󰈹",
+             //"4": "",
+             //"3": "",
+             //"5": "",
+             //"urgent": "",
+             //"focused": "",
+             //"default": ""
+            "active": "",
+            "default": ""
          },
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1"
@@ -100,11 +106,11 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "  {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": " {}%"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -150,7 +156,7 @@
     },
     "network": {
         "format": "{ifname}",
-        "format-wifi": "   {signalStrength}% {essid}",
+        "format-wifi": "  {signalStrength}% {ifname}",
         "format-ethernet": "  {ipaddr}",
         "format-disconnected": "Not connected", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddri}",

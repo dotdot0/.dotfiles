@@ -1,9 +1,9 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Cartograph CF Nerd Font, monospace;
+    font-family: JetBrains Mono Nerd Font;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     min-height: 0;
 }
 
@@ -45,7 +45,6 @@ tooltip {
 #workspaces button:hover {
     background: #11111b;
     color: #cdd6f4;
-    border-radius: 10px;
 }
 
 #custom-language,
@@ -63,6 +62,7 @@ tooltip {
     background: #1e1e2e;
     padding: 0px 10px;
     margin: 3px 0px;
+    margin-right: 10px;
     margin-top: 10px;
     border: 1px solid #181825;
     border-radius: 10px;
@@ -146,6 +146,30 @@ tooltip {
     margin-top: 10px;
     border: 2px solid #181825;
     color: #a6e3a1;
+    margin-right: 11px;
+    border-radius: 10px;
+}
+
+#cpu {
+    background: #1e1e2e;
+    padding: 0px 10px;
+    padding-left: 5px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 2px solid #181825;
+    color: #f5c2e7;
+    margin-right: 11px;
+    border-radius: 10px;
+}
+
+#memory {
+    background: #1e1e2e;
+    padding: 0px 10px;
+    padding-left: 5px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 2px solid #181825;
+    color: #f5c2e7;
     margin-right: 11px;
     border-radius: 10px;
 }
